@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>My Heading</h2>
+<script>
+let input = +prompt('Nhap so can check: ');
+isPrime(input);
+function isPrime(number){
+let checkkk = true;
+if (number <2){
+alert('ko ngto');
+} else {
+for (let i=2; i<=Math.sqrt(number); i++){
+if(number % i ==0){
+checkkk = false;
+break;
+}
+}
+if (checkkk){
+alert(' ok nguyen to');
+} else {
+alert(' ko ngto');
+}
+}
+}
+</script>
+</body>
+</html>
